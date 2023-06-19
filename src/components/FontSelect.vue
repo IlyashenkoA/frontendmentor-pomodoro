@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
-
 const props = defineProps({
   defaultFont: { type: String, required: true },
   font: { type: String, required: true }

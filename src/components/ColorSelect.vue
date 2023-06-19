@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
-
 const props = defineProps({
   defaultColor: { type: String, required: true },
   color: { type: String, required: true }
