@@ -6,6 +6,7 @@ const MOBILE_SIZE = 768
 
 const store = usePomodoroStore()
 const currentTime = ref(store.getCurrentTimer)
+const currentTimerType = computed(() => store.pomodoro.type)
 
 // Default timer value
 const timerId = ref()
@@ -61,7 +62,9 @@ const resumeTimer = () => {
 
 // Restart timer function
 const restartTimer = () => {
-  timeRemain.value = currentTime.value * 60
+  // Get current time directly from the store in case if it was updated in process
+  timeRemain.value = store.getCurrentTimer * 60
+  step.value = 100 / (store.getCurrentTimer * 60)
   startTimer()
 }
 
@@ -110,24 +113,21 @@ const currentTimeString = computed(() => {
 
 /**
  * When the type of timer is changed:
- *  - update default timer parameters
+ *  - set default timer parameters
  *  - reset status
- *  - stop timer
  *  - reset progress
+ *  - stop timer
  */
-store.$subscribe(
-  () => {
-    currentTime.value = store.getCurrentTimer
-    status.value = 'start'
+watch(currentTimerType, () => {
+  currentTime.value = store.getCurrentTimer
+  status.value = 'start'
 
-    timeRemain.value = currentTime.value * 60
-    progress.value = 100
-    step.value = 100 / (currentTime.value * 60)
+  timeRemain.value = currentTime.value * 60
+  progress.value = 100
+  step.value = 100 / (currentTime.value * 60)
 
-    clearInterval(timerId.value)
-  },
-  { detached: true }
-)
+  clearInterval(timerId.value)
+})
 
 watch(windowWidth, () => {
   if (windowWidth.value < MOBILE_SIZE) {
@@ -185,17 +185,17 @@ onUnmounted(() => {
           :style="{
             'letter-spacing':
               windowWidth < MOBILE_SIZE
-                ? store.getFont === 'Kumbh Sans'
+                ? store.pomodoro.font === 'Kumbh Sans'
                   ? '-0.25rem'
-                  : store.getFont === 'Roboto Slab'
+                  : store.pomodoro.font === 'Roboto Slab'
                   ? 'normal'
                   : '-0.625rem'
-                : store.getFont === 'Kumbh Sans'
+                : store.pomodoro.font === 'Kumbh Sans'
                 ? '-0.3125rem'
-                : store.getFont === 'Roboto Slab'
+                : store.pomodoro.font === 'Roboto Slab'
                 ? 'normal'
                 : '-0.625rem',
-            'font-weight': store.getFont === 'Space Mono' ? 'normal' : 'bold'
+            'font-weight': store.pomodoro.font === 'Space Mono' ? 'normal' : 'bold'
           }"
         >
           {{ currentTimeString }}

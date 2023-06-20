@@ -25,12 +25,6 @@ export const usePomodoroStore = defineStore('pomodoro', {
     },
     getTimerByType: (state) => {
       return (type: string) => state.pomodoro[type].time
-    },
-    getColor: (state) => {
-      return state.pomodoro.color
-    },
-    getFont: (state) => {
-      return state.pomodoro.font
     }
   },
   actions: {
