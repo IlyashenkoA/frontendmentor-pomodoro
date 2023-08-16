@@ -13,10 +13,10 @@
 
 Introducing our Pomodoro Application, meticulously designed to enhance your time management and productivity journey. Crafted using Vue and Pinia, this app offers a seamless and intuitive platform for optimizing work intervals and rejuvenating breaks.
 
-<img src="https://github.com/IlyashenkoA/frontendmentor-pomodoro/assets/12977611/1b3244cd-d55b-44e6-a82b-f15f2ec8dce3" />
-<img src="https://github.com/IlyashenkoA/frontendmentor-pomodoro/assets/12977611/2fe28f3b-0e90-47c1-8ce2-c3b8dcbc75ad" />
-<img src="https://github.com/IlyashenkoA/frontendmentor-pomodoro/assets/12977611/b71329b0-3e3c-40b3-a149-ecb51303361b" />
-<img src="https://github.com/IlyashenkoA/frontendmentor-pomodoro/assets/12977611/2fd1a5d7-c77d-49ab-b3bf-6df7234c8056" />
+<img src="https://github.com/IlyashenkoA/frontendmentor-pomodoro/assets/12977611/1b3244cd-d55b-44e6-a82b-f15f2ec8dce3" width="700" />
+<img src="https://github.com/IlyashenkoA/frontendmentor-pomodoro/assets/12977611/2fe28f3b-0e90-47c1-8ce2-c3b8dcbc75ad" width="700" />
+<img src="https://github.com/IlyashenkoA/frontendmentor-pomodoro/assets/12977611/b71329b0-3e3c-40b3-a149-ecb51303361b" width="700" />
+<img src="https://github.com/IlyashenkoA/frontendmentor-pomodoro/assets/12977611/2fd1a5d7-c77d-49ab-b3bf-6df7234c8056" width="700" />
 
 
 
