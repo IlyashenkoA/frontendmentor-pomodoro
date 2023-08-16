@@ -1,46 +1,65 @@
-# frontendmentor-pomodoro
+<br/>
+<p align="center">
+  <h3 align="center">Frontend Mentor Pomodoro</h3>
 
-This template should help get you started developing with Vue 3 in Vite.
+  <p align="center">
+    <a href="https://frontendmentor-pomodoro.vercel.app/">View Demo</a>
+  </p>
+</p>
 
-## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-## Type Support for `.vue` Imports in TS
+## About The Project
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+Introducing our Pomodoro Application, meticulously designed to enhance your time management and productivity journey. Crafted using Vue and Pinia, this app offers a seamless and intuitive platform for optimizing work intervals and rejuvenating breaks.
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+<img src="https://github.com/IlyashenkoA/frontendmentor-pomodoro/assets/12977611/1b3244cd-d55b-44e6-a82b-f15f2ec8dce3" />
+<img src="https://github.com/IlyashenkoA/frontendmentor-pomodoro/assets/12977611/2fe28f3b-0e90-47c1-8ce2-c3b8dcbc75ad" />
+<img src="https://github.com/IlyashenkoA/frontendmentor-pomodoro/assets/12977611/b71329b0-3e3c-40b3-a149-ecb51303361b" />
+<img src="https://github.com/IlyashenkoA/frontendmentor-pomodoro/assets/12977611/2fd1a5d7-c77d-49ab-b3bf-6df7234c8056" />
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
 
-## Customize configuration
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
+### Key Features:
 
-```sh
-npm install
-```
+* <b>Effective Work-Break Cycle:</b> Embrace the proven Pomodoro technique, effortlessly guiding your workflow through structured work and break intervals. Maintain focus during work sessions, followed by well-deserved breaks to recharge.
 
-### Compile and Hot-Reload for Development
+* <b>Tailored Interval Customization:</b> Tailor the app to suit your preferences. Adjust pomodoro, short-break, and long-break timers to match your optimal work rhythm and personal schedule.
 
-```sh
-npm run dev
-```
+* <b>Personalized Visual Experience:</b> Immerse yourself in a user-friendly interface that you can make your own. Customize accent colors and typography to create a visually pleasing environment that resonates with your style.
 
-### Type-Check, Compile and Minify for Production
+* <b>Intuitive Timer Controls:</b> Take full control of your work cycles with easy-to-use timer controls. Initiate, pause, and restart timers effortlessly, allowing you to manage your work and breaks seamlessly.
 
-```sh
-npm run build
-```
+* <b>Progress Monitoring Made Easy:</b> Your journey is tracked effortlessly. Settings and session history are automatically stored in local storage, ensuring a continuous experience across sessions. Keep tabs on your progress without disruption.
 
-### Lint with [ESLint](https://eslint.org/)
+The Pomodoro Application is your ally in achieving efficient time management without the fuss. Experience the power of Vue and Pinia as they seamlessly orchestrate your work and rest cycles, aiding you in maintaining focus, boosting productivity, and finding balance.
 
-```sh
-npm run lint
-```
+## Built With
+
+* Vue
+* Pinia
+* TailwindCSS
+
+## Getting Started
+
+
+### Installation
+
+1. **Clone the Repository:**
+   Open your terminal and navigate to the directory where you want to store your project. Run the following command to clone the repository:
+   ```
+   git clone https://github.com/IlyashenkoA/frontendmentor-pomodoro.git
+   ```
+
+2. **Install Dependencies:**
+   Install the project dependencies using npm (Node Package Manager):
+   ```
+   npm install
+   ```
+
+3. **Start the Development Server with Vite:**
+   Launch the Vue development server powered by Vite to experience the lightning-fast build process:
+   ```
+   npm run dev
+   ```
