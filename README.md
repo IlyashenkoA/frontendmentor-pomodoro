@@ -11,7 +11,7 @@
 
 ## About The Project
 
-Introducing our Pomodoro Application, meticulously designed to enhance your time management and productivity journey. Crafted using Vue and Pinia, this app offers a seamless and intuitive platform for optimizing work intervals and rejuvenating breaks.
+Pomodoro Application is meticulously designed to enhance your time management and productivity journey. Crafted using Vue and Pinia, this app offers a seamless and intuitive platform for optimizing work intervals and rejuvenating breaks.
 
 <img src="https://github.com/IlyashenkoA/frontendmentor-pomodoro/assets/12977611/1b3244cd-d55b-44e6-a82b-f15f2ec8dce3" width="700" />
 <img src="https://github.com/IlyashenkoA/frontendmentor-pomodoro/assets/12977611/2fe28f3b-0e90-47c1-8ce2-c3b8dcbc75ad" width="700" />
